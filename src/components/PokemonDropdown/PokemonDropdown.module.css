@@ -1,0 +1,144 @@
+.pokemonDropdown {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.pokemonDropdown__inputWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.pokemonDropdown__input {
+  width: 100%;
+  padding: 12px 16px;
+  padding-right: 45px;
+  font-size: 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+.pokemonDropdown__input:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+}
+
+.pokemonDropdown__input:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+.pokemonDropdown__clearButton {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 28px;
+  line-height: 1;
+  color: #999;
+  cursor: pointer;
+  padding: 0;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.pokemonDropdown__clearButton:hover {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.pokemonDropdown__clearButton:active {
+  background-color: #e0e0e0;
+}
+
+.pokemonDropdown__list {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  max-height: 400px;
+  overflow-y: auto;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.pokemonDropdown__empty {
+  padding: 20px;
+  text-align: center;
+  color: #999;
+}
+
+.pokemonDropdown__item {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  cursor: pointer;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.2s;
+}
+
+.pokemonDropdown__item:hover {
+  background-color: #f8f9fa;
+}
+
+.pokemonDropdown__item:last-child {
+  border-bottom: none;
+}
+
+.pokemonDropdown__item:first-child {
+  border-radius: 12px 12px 0 0;
+}
+
+.pokemonDropdown__item:last-child {
+  border-radius: 0 0 12px 12px;
+}
+
+.pokemonDropdown__image {
+  width: 48px;
+  height: 48px;
+  margin-right: 12px;
+  image-rendering: pixelated;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.pokemonDropdown__name {
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Scrollbar styling */
+.pokemonDropdown__list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.pokemonDropdown__list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 0 12px 12px 0;
+}
+
+.pokemonDropdown__list::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+.pokemonDropdown__list::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}

@@ -1,0 +1,168 @@
+.main {
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.titleButton {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-shadow: inherit;
+}
+
+.titleButton:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: scale(1.02);
+}
+
+.titleButton:active {
+  transform: scale(0.98);
+}
+
+.subtitle {
+  font-size: 18px;
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+.searchSection {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.resultsSection {
+  min-height: 400px;
+}
+
+.errorMessage {
+  background: #fff3cd;
+  border: 1px solid #ffc107;
+  color: #856404;
+  padding: 16px;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.welcomeMessage {
+  background: white;
+  border-radius: 16px;
+  padding: 60px 40px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.welcomeIcon {
+  font-size: 72px;
+  margin-bottom: 20px;
+}
+
+.welcomeMessage h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.welcomeMessage p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.exampleSearches {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 2px solid #f0f0f0;
+}
+
+.exampleSearches p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.exampleButtons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.exampleBtn {
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 24px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.exampleBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main {
+    padding: 20px 16px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .welcomeMessage {
+    padding: 40px 20px;
+  }
+
+  .welcomeMessage h2 {
+    font-size: 24px;
+  }
+
+  .exampleButtons {
+    flex-direction: column;
+  }
+
+  .exampleBtn {
+    width: 100%;
+  }
+}

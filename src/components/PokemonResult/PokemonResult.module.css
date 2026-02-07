@@ -1,0 +1,284 @@
+.resultContainer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.header {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.imageWrapper {
+  flex-shrink: 0;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.pokemonImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.headerInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pokemonName {
+  font-size: 42px;
+  color: #333;
+  margin: 0 0 8px 0;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.pokemonNumber {
+  font-size: 20px;
+  color: #999;
+  margin: 0 0 8px 0;
+  font-weight: 600;
+}
+
+.classification {
+  font-size: 16px;
+  color: #666;
+  margin: 0 0 16px 0;
+}
+
+.types {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.typeTag {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+/* Pokemon Type Colors */
+.grass { background-color: #78C850; }
+.fire { background-color: #F08030; }
+.water { background-color: #6890F0; }
+.electric { background-color: #F8D030; color: #333; }
+.ice { background-color: #98D8D8; }
+.fighting { background-color: #C03028; }
+.poison { background-color: #A040A0; }
+.ground { background-color: #E0C068; }
+.flying { background-color: #A890F0; }
+.psychic { background-color: #F85888; }
+.bug { background-color: #A8B820; }
+.rock { background-color: #B8A038; }
+.ghost { background-color: #705898; }
+.dark { background-color: #705848; }
+.dragon { background-color: #7038F8; }
+.steel { background-color: #B8B8D0; }
+.fairy { background-color: #EE99AC; }
+.normal { background-color: #A8A878; }
+
+.statsSection {
+  margin-bottom: 30px;
+}
+
+.statGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+}
+
+.statItem {
+  background: #f8f9fa;
+  padding: 16px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.statLabel {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.statValue {
+  display: block;
+  font-size: 18px;
+  color: #333;
+  font-weight: 700;
+}
+
+.infoSection {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.infoRow {
+  background: #f8f9fa;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.infoTitle {
+  font-size: 16px;
+  color: #333;
+  margin: 0 0 12px 0;
+  font-weight: 600;
+}
+
+.infoTags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.infoTag {
+  padding: 6px 12px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  font-size: 13px;
+  color: #555;
+  font-weight: 500;
+}
+
+.infoTag.weakness {
+  background: #ffebee;
+  border-color: #ef5350;
+  color: #c62828;
+}
+
+.attacksSection {
+  margin-bottom: 30px;
+}
+
+.sectionTitle {
+  font-size: 28px;
+  color: #333;
+  margin: 0 0 20px 0;
+  font-weight: 600;
+}
+
+.attackCategory {
+  margin-bottom: 24px;
+}
+
+.attackTitle {
+  font-size: 20px;
+  color: #555;
+  margin: 0 0 12px 0;
+  font-weight: 600;
+}
+
+.attackGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.attackCard {
+  background: #f8f9fa;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  transition: all 0.2s;
+}
+
+.attackCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.attackHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.attackName {
+  font-size: 15px;
+  color: #333;
+  font-weight: 600;
+}
+
+.attackDamage {
+  font-size: 14px;
+  color: #0070f3;
+  font-weight: 700;
+}
+
+.attackType {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .imageWrapper {
+    width: 160px;
+    height: 160px;
+  }
+
+  .pokemonName {
+    font-size: 32px;
+  }
+
+  .statGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .attackGrid {
+    grid-template-columns: 1fr;
+  }
+}
